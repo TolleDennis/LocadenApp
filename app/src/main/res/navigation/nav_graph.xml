@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/purchase_vehicles_shop_fragment">
+
+    <fragment
+        android:id="@+id/purchase_vehicles_shop_fragment"
+        android:name="ke.co.locaden.shoppingcart.views.PurchaseVehiclesShopFragment"
+        android:label="Shop"
+        tools:layout="@layout/fragment_purchase_vehicles_shop">
+        <action
+            android:id="@+id/action_purchase_vehicles_shop_fragment_to_productVehiclesDetailsFragment"
+            app:destination="@id/productVehiclesDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_purchase_vehicles_shop_fragment_to_purchaseVehiclesCartFragment"
+            app:destination="@id/purchaseVehiclesCartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productVehiclesDetailsFragment"
+        android:name="ke.co.locaden.shoppingcart.views.ProductVehiclesDetailsFragment"
+        android:label="Product Details"
+        tools:layout="@layout/fragment_product_vehicles_details">
+        <action
+            android:id="@+id/action_productDetailsFragment_to_purchaseCartFragment"
+            app:destination="@id/purchaseVehiclesCartFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/purchaseVehiclesCartFragment"
+        android:name="ke.co.locaden.shoppingcart.views.PurchaseVehiclesCartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_purchase_vehicles_cart">
+
+        <action
+            android:id="@+id/action_purchaseVehiclesCartFragment_to_purchaseVehiclesOrderFragment"
+            app:destination="@id/purchaseVehiclesOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/purchaseVehiclesOrderFragment"
+        android:name="ke.co.locaden.shoppingcart.views.PurchaseVehiclesOrderFragment"
+        android:label="Purchase Order"
+        tools:layout="@layout/fragment_purchase_vehicles_order">
+        <action
+            android:id="@+id/action_purchaseOrderFragment_to_purchaseShopFragment"
+            app:destination="@id/purchase_vehicles_shop_fragment"
+            app:popUpTo="@id/purchase_vehicles_shop_fragment" />
+    </fragment>
+</navigation>

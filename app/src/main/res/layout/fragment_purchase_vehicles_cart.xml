@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#273036"
+    android:layout_height="match_parent">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       tools:context=".shoppingcart.views.PurchaseVehiclesCartFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartRecylerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/cart_row"
+        tools:itemCount="2"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+        <TextView
+            android:id="@+id/orderTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textColor="@color/white"
+            android:layout_margin="8dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:text="Total Kshs.9800000.0"/>
+
+       <Button
+           android:id="@+id/placeOrder"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+           android:text="Place Order"
+           android:layout_margin="8dp"
+           android:textColor="@color/green"
+           android:layout_gravity="end"
+           android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"/>
+
+
+</LinearLayout>
+
+</ScrollView>

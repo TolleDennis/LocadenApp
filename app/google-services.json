@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "468184630020",
+    "project_id": "locaden-5c65c",
+    "storage_bucket": "locaden-5c65c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468184630020:android:2bcaf822b4f6af8976c651",
+        "android_client_info": {
+          "package_name": "ke.co.locaden"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468184630020-f3opputpavucbvktfbbh6c6suhluoo1j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQQpFuZF5F2Sxpk9mCKKfpFSE26syDJcQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "468184630020-f3opputpavucbvktfbbh6c6suhluoo1j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

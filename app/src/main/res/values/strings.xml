@@ -1,0 +1,66 @@
+<resources>
+    <string name="search">search</string>
+    <string name="location">location</string>
+    <string name="app_name">LOCADEN</string>
+    <string name="menu_bar">menu bar</string>
+    <string name="lands"> LANDS, PLOTS AND APARTMENTS</string>
+    <string name="cars"> CARS,TRUCKS AND LORRIES</string>
+    <string name="clothes"> CLOTHES, SHOES AND ACCESSORIES</string>
+    <string name="electrical"> ELECTRICAL APPLIANCES</string>
+    <string name="client"> CLIENT LOGIN/SIGNUP</string>
+    <string name="title"> Title</string>
+    <string name="Have_account">Already Have an Account?Just Sign In</string>
+    <string name="Have_account2"><u>Already Have an Account?Just Sign In.</u></string>
+    <string name="email_address"></string>
+    <string name="password"></string>
+    <string name="app_image"></string>
+    <string name="app_locaden"></string>
+    <string name="email_addressR">Email Address</string>
+    <string name="passwordRegister">Password</string>
+    <string name="passwordConfirm">Confirm Password</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="login">LOGIN</string>
+    <string name="forgotPass"><u>Forgot Password?</u></string>
+    <string name="or">OR</string>
+    <string name="register">Register</string>
+    <string name="full_name">Full Name</string>
+    <string name="user_name">Username</string>
+    <string name="signup_details">Welcome New User,Kindly SignUp.</string>
+    <string name="new_member">New User? Register Now</string>
+    <string name="Sign_in_with"><u>Sign in with</u></string>
+    <string name="Vehicles">SEDAN/COUPE/SPORTS CAR/STATION WAGON/HATCHBACK</string>
+    <string name="Vehicles1">PICKUP TRUCKS/DOUBLE CABIN/MINIVAN/SUV/COMMUTER</string>
+    <string name="Vehicles2">BUSES/VAN/CITY BUS/TOURIST BUS/SHUTTLE BUS</string>
+    <string name="Vehicles3">LORRIES/TRUCKS/TRACTORS/CARGO/SEMI TRAILERS</string>
+    <string name="Baby_clothes">BABY CLOTHES/SHOES/ACCESSORIES</string>
+    <string name="Male_clothes">MALE CLOTHES/SHOES/ACCESSORIES</string>
+    <string name="Women_clothes">WOMEN CLOTHES/SHOES/ACCESSORIES</string>
+    <string name="Unisex_Items">UNISEX ITEMS AND ACCESSORIES</string>
+    <string name="Lands_Sale"> LANDS FOR SALE AND LEASE </string>
+    <string name="Plots_Sale"> PLOTS FOR SALE AND LEASE </string>
+    <string name="Apartments_Sale"> APARTMENTS FOR SALE AND LEASE </string>
+    <string name="Shops_Sale"> SHOPS AND STORAGE SPACE FOR LEASE </string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="full_names">Full Names</string>
+    <string name="welcome" />
+    <string name="revoke_access" />
+    <string name="logout">logout</string>
+    <string name="continue_shopping">Continue Shopping</string>
+    <string name="thanks_for_your_order">Thanks for Your Order</string>
+    <string name="age">Age</string>
+    <string name="updateProfile1">Update</string>
+    <string name="go_to_shop">Go To Shop</string>
+
+    <string-array name="quantity_string_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7(Max)</item>
+
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="product"
+            type="ke.co.locaden.shoppingcart.models.Product" />
+        
+        <variable
+            name="shopInterface"
+            type="ke.co.locaden.shoppingcart.adapters.ShopListAdapter.ShopInterface" />
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:onClick="@{()->shopInterface.onItemClick(product)}">
+
+        <ImageView
+            android:id="@+id/productImageView"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:background="@drawable/color_gradient"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/audi"
+            android:productImage="@{product.imageUrl}" />
+
+        <TextView
+            android:id="@+id/productName"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:background="#273036"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@{product.productName}" />
+
+
+        <TextView
+            android:id="@+id/productBriefDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="@{product.productBriefDes}"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@{ `Ksh.` + String.valueOf(product.price) }"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
+
+        <TextView
+            android:id="@+id/productAvailability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="@{product.available ? `Available`:`Out of Stock`}"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+             />
+
+        <Button
+            android:id="@+id/add_to_cart"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:enabled="@{product.available}"
+            android:text="Add to Cart"
+            android:onClick="@{()->shopInterface.addItem(product)}"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:background="@color/white" />
+    </LinearLayout>
+</layout>
